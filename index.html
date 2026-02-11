@@ -6,11 +6,13 @@
     <title>Source Android Mods</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <div class="container">
         <nav>
             <div class="nav-wrapper grey darken-4">
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li class="active"><a href="index.html">Main Page</a></li>
                     <li><a href="faq.html">Installation</a></li>
@@ -21,6 +23,14 @@
                     <li><a href="https://discord.gg/XetGPze2ve">Discord Server</a></li>
                     <li><a href="https://github.com/ItzVladik/source-engine">Source Engine Mods Repository</a></li>
                 </ul> 
+
+                <ul class="sidenav grey darken-4" id="mobile-demo">
+                    <li class="white-text"><a href="index.html">Main Page</a></li>
+                    <li><a href="faq.html">Installation</a></li>
+                    <li><a href="mods.html">Modifications</a></li>
+                    <li><a href="https://discord.gg/XetGPze2ve">Discord Server</a></li>
+                    <li><a href="https://github.com/ItzVladik/source-engine">Source Engine Mods Repository</a></li>
+                </ul>
             </div>
         </nav> 
 
@@ -38,5 +48,12 @@
                 </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
 </body>
 </html>

@@ -17,3 +17,20 @@ a:hover {
     color: #e0e0e0;
     min-height: 100vh;
 }
+
+.sidenav,
+.sidenav a,
+.sidenav i,
+.sidenav span {
+    color: white !important;
+    background-color: #1e1e1e;
+}
+    
+.sidenav li:hover {
+    background-color: #333 !important;
+}
+    
+.sidenav li:hover a,
+.sidenav li:hover i {
+    color: #5e5e5e !important;
+}
