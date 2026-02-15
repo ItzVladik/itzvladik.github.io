@@ -1,83 +1,90 @@
 const FILE_LIST = [
   {
     "name": "alone",
-    "download_url": "uploads/alone.apk",
-    "resources_url": "https://www.moddb.com/mods/half-life-2-alone-mod",
+    "apk": "external",
+    "resources": "https://www.moddb.com/mods/half-life-2-alone-mod",
   },
   {
     "name": "ez",
-    "download_url": "uploads/ez.apk",
-    "patch_url": "https://github.com/ItzVladik/extras/raw/refs/heads/main/mods/ez/az_c2_3.bsp",
-    "resources_url": "https://store.steampowered.com/app/714070/Entropy__Zero/",
+    "apk": "external",
+    "patch": "https://files.workbench.network/srceng/itzvladik/patch/az_c2_3.bsp",
+    "resources": "https://store.steampowered.com/app/714070/Entropy__Zero/",
   },
   {
     "name": "ez2",
-    "download_url": "uploads/ez2.apk",
-    "resources_url": "https://drive.google.com/file/d/1s2evTI96tXGq8DhDu6xWkr2PA_DCfcQu/view?usp=sharing",
-    "touch_url": "https://github.com/ItzVladik/extras/raw/refs/heads/main/mods/ez2/touch.7z",
+    "apk": "external",
+    "resources": "https://files.workbench.network/srceng/Entropy%20Zero%202/ez2.zip",
+    "touch": "external",
     "warn" : "ARM64 ONLY!",
   },
   {
     "name": "gunmod",
-    "download_url": "uploads/gunmod.apk",
-    "resources_url": "https://drive.google.com/file/d/1XHqwxAbg0XWEZOL3pBgBGjxADKrBJXGT/view?usp=sharing",
+    "apk": "external",
+    "resources": "external",
     "warn" : "UNSTABLE!",
   },
   {
     "name": "kl",
-    "download_url": "uploads/kl.apk",
-    "resources_url": "https://drive.google.com/file/d/1D2CKNCG_dG-l2ul7dSWjwmVXRwZZPzDn/view",
-    "touch_url" : "https://drive.google.com/file/d/1D2CKNCG_dG-l2ul7dSWjwmVXRwZZPzDn/view",
+    "apk": "external",
+    "resources": "external",
+    "touch" : "external",
     "warn" : "UNSTABLE!",
   },
   {
     "name": "lc",
-    "download_url": "uploads/lc.apk",
-    "resources_url": "https://store.steampowered.com/app/220/HalfLife_2/",
+    "apk": "external",
+    "resources": "https://store.steampowered.com/app/220/HalfLife_2/",
   },
   {
     "name": "mi",
-    "download_url": "uploads/mi.apk",
-    "resources_url": "https://www.moddb.com/mods/missing-information/downloads/missing-information-16-full",
-    "patch_url" : "https://github.com/ItzVladik/extras/raw/refs/heads/main/mods/mi/patch.7z",
+    "apk": "external",
+    "resources": "https://www.moddb.com/mods/missing-information/downloads/missing-information-16-full",
+    "patch" : "external",
   },
   {
     "name": "nh2",
-    "download_url": "uploads/nh2.apk",
-    "resources_url": "https://www.moddb.com/mods/nightmare-house-2/downloads/nightmare-house-2-2015",
+    "apk": "external",
+    "resources": "https://www.moddb.com/mods/nightmare-house-2/downloads/nightmare-house-2-2015",
   },
   {
-    "name": "overcharged",
-    "download_url": "uploads/overcharged.apk",
-    "resources_url": "https://archive.org/details/hl2oc",
-    "touch_url" : "https://github.com/ItzVladik/extras/raw/refs/heads/main/mods/overcharged/overcharged.zip",
+    "name": "ovr",
+    "apk": "external",    
+    "resources": "https://archive.org/details/hl2oc",
+    "touch" : "external",
     "warn" : "UNSTABLE AND ARM64 ONLY!",
   },
   {
+    "apk": "external",    
     "name": "p3",
-    "download_url": "uploads/p3.apk",
-    "resources_url": "https://archive.org/details/postal-iii",
-    "patch_url": "https://github.com/ItzVladik/extras/raw/refs/heads/main/mods/p3/p3.7z",
+    "resources": "https://archive.org/details/postal-iii",
+    "patch": "external",
     "warn" : "UNSTABLE!",
   },
   {
-    "name": "snowdrop",
-    "download_url": "uploads/snowdrop.apk",
-    "resources_url": "https://www.moddb.com/mods/sde/downloads/snowdrop-escape",
-    "touch_url" : "https://github.com/ItzVladik/extras/raw/refs/heads/main/mods/snowdrop/snowdrop_touch.7z",
+    "name": "sde",
+    "apk": "external",
+    "resources": "https://www.moddb.com/mods/sde/downloads/snowdrop-escape",
+    "touch" : "external",
     "warn" : "ARM64 ONLY!",
   },
   {
     "name": "te120",
-    "download_url": "uploads/te120.apk",
-    "resources_url": "https://store.steampowered.com/app/365300/Transmissions_Element_120/",
+    "apk": "external",
+    "resources": "https://store.steampowered.com/app/365300/Transmissions_Element_120/",
     "warn" : "ARM64 ONLY!",
   },
   {
     "name": "tf2",
-    "download_url": "uploads/tf2.apk",
-    "resources_url": "https://mega.nz/file/fMIThQqZ#_qq1b0ZGj_92UMd4FkIJ7QhJ7emJAs5hHwGOHF8rACk",
-    "touch_url" : "https://github.com/ItzVladik/extras/raw/refs/heads/main/mods/tf2/tf2_touch.7z",
+    "apk": "external",
+    "resources": "https://mega.nz/file/fMIThQqZ#_qq1b0ZGj_92UMd4FkIJ7QhJ7emJAs5hHwGOHF8rACk",
+    "touch" : "external",
+  },
+  {
+    "name": "swelter",
+    "apk": "external",
+    "resources": "https://www.moddb.com/mods/swelter",
+    "touch": "external",
+    "warn": "UNSTABLE!",
   }
 ];
 
@@ -95,17 +102,16 @@ const SITE_CONFIG = {
         'mi' : 'Missing Information',
         'nh2' :  'Nightmare House 2',
         'p3' :  'Postal III',
-        'snowdrop' :  'Snowdrop Escape',
+        'sde' :  'Snowdrop Escape',
         'swelter' :  'Swelter',
         'te120' :  'Transmissions: Element 120',
         'tf2' : 'Team Fortress 2 (2008 Version)',
-        'overcharged' : 'OVERCHARGED',
+        'ovr' : 'OVERCHARGED',
         'gunmod' : 'GunMod',  
     },
 
     INSTRUCTIONS: [
         {
-            "title": "Additional Info",
             "forFile": "alone",
             "steps": [
                 "This mod have hidden panel, type cl_draweffectspanel 1 in console.",
@@ -114,7 +120,6 @@ const SITE_CONFIG = {
         },
 
         {
-            "title": "Additional Info",
             "forFile": "ez2",
             "steps": [
                 "This mod requires Half-Life 2, Episode 1, Episode 2 to be installed.",
@@ -127,7 +132,6 @@ const SITE_CONFIG = {
         },
 
         {
-            "title": "Additional Info",
             "forFile": "ez",
             "steps": [
                 "This mod requires Half-Life 2, Episode 1, Episode 2 to be installed.",
@@ -138,7 +142,6 @@ const SITE_CONFIG = {
         },
 
         {
-            "title": "Additional Info",
             "forFile": "gunmod",
             "steps": [
                 "This mod requires Half-Life 2, Missing Information, Half-Life: Source to be installed.",
@@ -147,7 +150,6 @@ const SITE_CONFIG = {
         },
 
         {
-            "title": "Additional Info",
             "forFile": "kl",
             "steps": [
                 "This mod requires Half-Life 2 to be installed.",
@@ -159,7 +161,6 @@ const SITE_CONFIG = {
         },
 
         {
-            "title": "Additional Info",
             "forFile": "lc",
             "steps": [
                 "This mod requires Half-Life 2, Episode 1 and Episode 2 to be installed.",
@@ -170,7 +171,6 @@ const SITE_CONFIG = {
         },
 
         {
-            "title": "Additional Info",
             "forFile": "mi",
             "steps": [
                 "This mod requires Half-Life 2, Episode 1, Episode 2 to be installed.",
@@ -180,7 +180,6 @@ const SITE_CONFIG = {
         },
 
         {
-            "title": "Additional Info",
             "forFile": "nh2",
             "steps": [
                 "This mod requires Half-Life 2, Episode 1, Episode 2 to be installed.",
@@ -190,7 +189,6 @@ const SITE_CONFIG = {
         },
 
         {
-            "title": "Additional Info",
             "forFile": "p3",
             "steps": [
                 "Download patch and extract content of this archive to the path where the p3 folder is located and agree to gameinfo replace.",
@@ -202,8 +200,7 @@ const SITE_CONFIG = {
         },
 
         {
-            "title": "Additional Info",
-            "forFile": "snowdrop",
+            "forFile": "sde",
             "steps": [
                 "This mod requires Half-Life 2, Episode 1, Episode 2 to be installed.",
                 "Download touch and extract to snowdrop_escape folder.",
@@ -212,7 +209,6 @@ const SITE_CONFIG = {
         },
 
         {
-            "title": "Additional Info",
             "forFile": "te120",
             "steps": [
                 "This mod requires Half-Life 2, Episode 1, Episode 2 to be installed.",
@@ -222,7 +218,6 @@ const SITE_CONFIG = {
         },
 
         {
-            "title": "Additional Info",
             "forFile": "tf2",
             "steps": [
                 "This mod requires Half-Life 2",
@@ -233,8 +228,7 @@ const SITE_CONFIG = {
         },
 
         {
-            "title": "Additional Info",
-            "forFile": "overcharged",
+            "forFile": "ovr",
             "steps": [
                 "This mod requires Half-Life 2, Episode 1, Episode 2",
                 "You can try any version from archive.org page, it will work, but you won't be able to try new features from newer versions.",
@@ -245,14 +239,13 @@ const SITE_CONFIG = {
         },
 
         {
-            "title": "Additional Info",
-            "forFile": "episodic",
+            "forFile": "swelter",
             "steps": [
-                "This mod requires Half-Life 2, Episode 1, Episode 2",
-                "You can try any version from archive.org page, it will work, but you won't be able to try new features from newer versions.",
-                "Download touch and extract to overcharged folder.",
-                "Critical Issues: Long loading time (from 4 to 20 min), dynamic RTT reduce fps same as bokeh dof shader, shader editor gui is not working properly.",
-                "Modification by MikeD, BriJee and other, touch by S.E.A.T.H"
+                "This mod requires Half-Life 2, Episode 1, Episode 2 to be installed.",
+                "Download touch and extract to swelter folder.",
+                "Rainbow reflections are a bug that appears on low-end devices. The solution is to disable reflections using the console command mat_sepecular 0.",
+                "For some reason the sound from the VPK doesn't work, so you need to unpack the VPK with the sound for it to appear, I don't know how to fix this yet.",
+                "Modification by SDE Dev Team, touch by Eternal Cringe.",
             ]
         },
     ],

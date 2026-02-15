@@ -32,6 +32,13 @@ async function displayFilesWithInstructions(files, instructions) {
     container.innerHTML = html;
 }
 
+const EXTERNAL_URL = 'https://files.workbench.network/srceng/itzvladik';
+
+function getUrl(key, file) {
+    const url = `${EXTERNAL_URL}/${key}/${file.name}${key === 'apk' ? '.apk' : `_${key}.7z`}`;
+    return file[key] == 'external' ? url : file[key];
+}
+
 function renderFilesList(files, instructions) {
     return files.map(file => {
         const fileInstruction = findInstructionForFile(file.name, instructions);
@@ -56,12 +63,11 @@ function renderFilesList(files, instructions) {
             
                 <div class="card-action">
                 ${[
-                    { key: 'download_url', text: 'Download APK' },
-                    { key: 'resources_url', text: 'Download Resources' },
-                    { key: 'patch_url', text: 'Download Patch' },
-                    { key: 'touch_url', text: 'Download Touch' }
-                ].map(({ key, text }) => file[key] ? `<a href="${file[key]}" target="_blank" rel="noopener noreferrer" style="margin-right: 10px; margin-bottom: 10px;" class="waves-effect waves-light blue darken-2 btn"><span>${text}</span></a>` : '').join('')}
-
+                    { key: 'apk', text: 'Download APK' },
+                    { key: 'resources', text: 'Download Resources' },
+                    { key: 'patch', text: 'Download Patch' },
+                    { key: 'touch', text: 'Download Touch' }
+                ].map(({ key, text }) => file[key] ? `<a href="${getUrl( key, file )}" target="_blank" rel="noopener noreferrer" style="margin-right: 10px; margin-bottom: 10px;" class="waves-effect waves-light blue darken-2 btn"><span>${text}</span></a>` : '').join('')}
                 </div>
             </div>
         </div>
