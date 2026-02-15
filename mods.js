@@ -85,6 +85,12 @@ const FILE_LIST = [
     "resources": "https://www.moddb.com/mods/swelter",
     "touch": "external",
     "warn": "UNSTABLE!",
+  },
+  {
+    "name": "ezu",
+    "apk": "external",
+    "resources": "https://web.archive.org/web/20230504090712/https://www.moddb.com/mods/entropy-zero-uprising/downloads/entropy-zero-uprising-episode-1",
+    "patch": "external",
   }
 ];
 
@@ -108,6 +114,7 @@ const SITE_CONFIG = {
         'tf2' : 'Team Fortress 2 (2008 Version)',
         'ovr' : 'OVERCHARGED',
         'gunmod' : 'GunMod',  
+        'ezu' : 'Entropy: Zero - Uprising',
     },
 
     INSTRUCTIONS: [
@@ -132,10 +139,18 @@ const SITE_CONFIG = {
         },
 
         {
+            "forFile": "ezu",
+            "steps": [
+                "This mod requires Half-Life 2, Episode 1, Episode 2 and Entropy Zero 1 to be installed.",
+                "Download patch and replace maps with maps from patch.",
+                "Modification by Employee8 & Filipad, Port by APTEMS1",
+            ]
+        },
+
+        {
             "forFile": "ez",
             "steps": [
                 "This mod requires Half-Life 2, Episode 1, Episode 2 to be installed.",
-                "Resources: From Steam",
                 "If you don't fall in the pit on az_c2_3, download this patched map and copy and replace existing map.",
                 "Modification by Breadman, 1upD and other, mapbase by Blixibon and other, patched map by Roshi/SaintSoftware."
             ]
@@ -164,7 +179,6 @@ const SITE_CONFIG = {
             "forFile": "lc",
             "steps": [
                 "This mod requires Half-Life 2, Episode 1 and Episode 2 to be installed.",
-                "Resources: From Steam.",
                 "You can run lostcoast with episodic launcher, but Fisherman will be without weapon_oldmanharpoon.",
                 "Modification by Valve."
             ]
@@ -248,6 +262,16 @@ const SITE_CONFIG = {
                 "Modification by SDE Dev Team, touch by Eternal Cringe.",
             ]
         },
+
+        {
+            "forFile": "ezu",
+            "steps": [
+                "This mod requires Half-Life 2, Episode 1, Episode 2 and Entropy Zero 1 to be installed.",
+                "Download patch and replace maps with maps from patch.",
+                "Modification by Employee8 & Filipad, Port by APTEMS1",
+            ]
+        },
+
     ],
     
     ICON_SETTINGS: {
