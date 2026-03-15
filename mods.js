@@ -91,6 +91,11 @@ const FILE_LIST = [
     "apk": "external",
     "resources": "https://web.archive.org/web/20230504090712/https://www.moddb.com/mods/entropy-zero-uprising/downloads/entropy-zero-uprising-episode-1",
     "patch": "external",
+  },
+  {
+    "name": "he",
+    "apk": "external",
+    "resources": "https://www.moddb.com/mods/half-life-2-short-stories/downloads",
   }
 ];
 
@@ -115,6 +120,7 @@ const SITE_CONFIG = {
         'ovr' : 'OVERCHARGED',
         'gunmod' : 'GunMod',  
         'ezu' : 'Entropy: Zero - Uprising',
+        'he': 'Human Error',
     },
 
     INSTRUCTIONS: [
@@ -269,6 +275,16 @@ const SITE_CONFIG = {
                 "This mod requires Half-Life 2, Episode 1, Episode 2 and Entropy Zero 1 to be installed.",
                 "Download patch and replace maps with maps from patch.",
                 "Modification by Employee8 & Filipad, Port by APTEMS1",
+            ]
+        },
+
+        {
+            "forFile": "he",
+            "steps": [
+                "This mod requires Half-Life 2, Episode 1, Episode 2.",
+                "Download from resources link - Human Error 1.0.2, Patch 1.0.3 and SDK 2013 Patch.",
+                "Extract pathces into Human Error folder",
+                "Modification by Half-Life: Short Stories team, Port by kroks1, APTEMS1",
             ]
         },
 
